@@ -3,7 +3,7 @@ au.com.agileware.xeroitems
 
 Extends
 [nz.co.fuzion.civixero](https://github.com/eileenmcnaughton/nz.co.fuzion.civixero)
-replacing account codes with item codes.
+replacing Xero account codes with Xero item codes (also referred to as Xero tracking categories). Read more about Xero tracking categories, https://help.xero.com/au/Settings_Tracking
 
 Installation & set-up
 ---------------------
