@@ -14,8 +14,8 @@ Installation & set-up
 
 1. First ensure that `nz.co.fusion.civixero` is installed.  This extension will
    not work with any other `nz.co.fuzion.accountsync` based accounting
-   synchronisation packages; for error free operation, ensure that these are not
-   enabled.
+   synchronisation packages; for error free operation, ensure that AccountSync
+   based extensions other than CiviXero are not enabled.
 2. Download the extension to your extensions folder, then enable it from within
    CiviCRM.
 3. In your Financial Accounts set up (Administer / CiviContribute /
