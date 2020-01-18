@@ -1,5 +1,4 @@
-au.com.agileware.xeroitems
-==========================
+# Xero Items
 
 A [CiviCRM](https://civicrm.org) extension which add functionality to the CiviXero Extension, 
 [nz.co.fuzion.civixero](https://github.com/eileenmcnaughton/nz.co.fuzion.civixero)
@@ -8,22 +7,44 @@ replacing Xero account codes with Xero item codes (also referred to as Xero inve
 2. Set up in your Xero account, https://go.xero.com/Accounts/Inventory
 3. Xero API, https://developer.xero.com/documentation/api/items
 
+The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
-Installation & set-up
----------------------
+## Requirements
 
-1. First ensure that `nz.co.fusion.civixero` is installed.  This extension will
-   not work with any other `nz.co.fuzion.accountsync` based accounting
-   synchronisation packages; for error free operation, ensure that AccountSync
-   based extensions other than CiviXero are not enabled.
-2. Download the extension to your extensions folder, then enable it from within
-   CiviCRM.
-3. In your Financial Accounts set up (Administer / CiviContribute /
-   Financial Accounts), set your "ACCTG CODE" values to the codes of your items
-   in Xero.
+* PHP v5.6+
+* CiviCRM 5.x
+* [Civixero extension](https://github.com/eileenmcnaughton/nz.co.fuzion.civixero)
+* [Accountsync extension](https://github.com/eileenmcnaughton/nz.co.fuzion.accountsync)
 
-How it works
-------------
+## Installation (Web UI)
+
+[Download the extension](https://github.com/agileware/au.com.agileware.xeroitems/archive/master.zip), and extract into your custom extensions directory, then enable via the Extensions admin page (normally via Administer » System Settings » Extensions)
+
+## Installation (CLI, Zip)
+
+Sysadmins and developers may download the `.zip` file for this extension and
+install it with the command-line tool [cv](https://github.com/civicrm/cv).
+
+```bash
+cd <extension-dir>
+cv dl au.com.agileware.xeroitems@https://github.com/agileware/au.com.agileware.xeroitems/archive/master.zip
+```
+
+## Installation (CLI, Git)
+
+Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
+install it with the command-line tool [cv](https://github.com/civicrm/cv).
+
+```bash
+git clone https://github.com/agileware/au.com.agileware.xeroitems.git
+cv en xeroitems
+```
+
+## Configuration
+
+In CiviCRM, open each Financial Account (Administer / CiviContribute / Financial Accounts) and set the "ACCTG CODE" values to the codes of your items in Xero.
+
+## How it works
 
 `Xeroitems` hooks into the `Civixero` push process for invoices, replacing
 Account codes with Item codes in line items if the financial account of a line
@@ -32,10 +53,20 @@ case that a matching Item is not found, the line item is not modified and falls
 back to submitting the line item against an account. If an accounting code
 matches *both* an Item and an Account, the **Item** is used.
 
-Author
-------
+About the Authors
+-----------------
 
-[Agileware](https://agileware.com.au) <projects@agileware.com.au>
+This CiviCRM extension was developed by the team at [Agileware](https://agileware.com.au) with support from the [Diversity Council Australia](https://www.dca.org.au).
 
-Development of this extension was sponsored by
-[Diversity Council Australia](https://www.dca.org.au)
+[Agileware](https://agileware.com.au) provide a range of CiviCRM services including:
+
+  * CiviCRM migration
+  * CiviCRM integration
+  * CiviCRM extension development
+  * CiviCRM support
+  * CiviCRM hosting
+  * CiviCRM remote training services
+
+Support your Australian [CiviCRM](https://civicrm.org) developers, [contact Agileware](https://agileware.com.au/contact) today!
+
+![Agileware](logo/agileware-logo.png)
