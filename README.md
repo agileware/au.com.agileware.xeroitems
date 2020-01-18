@@ -12,9 +12,9 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 ## Requirements
 
 * PHP v5.6+
-* CiviCRM 5.x
-* [Civixero extension](https://github.com/eileenmcnaughton/nz.co.fuzion.civixero)
-* [Accountsync extension](https://github.com/eileenmcnaughton/nz.co.fuzion.accountsync)
+* [CiviCRM 5.x](https://civicrm.org/download)
+* [CiviXero extension](https://github.com/eileenmcnaughton/nz.co.fuzion.civixero)
+* [AccountSync extension](https://github.com/eileenmcnaughton/nz.co.fuzion.accountsync)
 
 ## Installation (Web UI)
 
